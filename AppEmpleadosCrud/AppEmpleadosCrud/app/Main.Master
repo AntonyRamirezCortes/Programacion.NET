@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="AppEmpleadosCrud.app.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title> App Empleados </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300:500&display=swap" rel ="stylesheet">
+    <link href ="css/estilos.css"rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body class ="estiloBody">
+    <form id="form1" runat="server">
+        <div>
+            <!--menu-->
+            <header class="estiloHeader">
+                <nav class ="menuNav">
+                    <ul class="menuUl">
+
+                    
+                    <li class ="menuLi"> <a class ="menuLink" href ="./Default.aspx"> Home </a></li>
+                    <li class ="menuLi"> <a class ="menuLink" href ="./Datos.aspx"> Datos </a></li>
+                    <li class ="menuLi"> <a class ="menuLink" href ="./Nosotros.aspx"> Nosotros </a></li>
+
+                    </Ul>
+
+                </nav>
+
+            </header>
+
+
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+                <footer class ="estiloFooter">
+        <h3 class ="textFooter"> by  :Antony Ramirez Cortes </h3>
+        <div class ="contenedorGid">
+
+        <div>
+            <a href ="https://github.com/aaramirez122"> <img class="ico" src="pic/github.png" alt="" ></a>
+
+            </div> 
+            <div>
+
+            <small>aaramirez122 </small>
+            </div>
+            </div>
+        </footer>
+    </div>
+    </form>
+        
+</body>
+</html>
+    
